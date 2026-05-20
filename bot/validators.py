@@ -203,4 +203,3 @@ def validate_order_params(
         validated_price
     )
 
-# Made with Bob
