@@ -239,5 +239,3 @@ class BinanceFuturesClient:
         except Exception as e:
             logger.error(f"Failed to get symbol info: {e}")
             return None
-
-# Made with Bob
