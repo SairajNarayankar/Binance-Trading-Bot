@@ -60,4 +60,3 @@ echo "Test suite completed!"
 echo "Check the logs/ directory for detailed logs"
 echo "=========================================="
 
-# Made with Bob
