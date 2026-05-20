@@ -227,4 +227,3 @@ def create_order_manager() -> OrderManager:
         logger.error(f"Failed to create order manager: {e}")
         raise
 
-# Made with Bob
