@@ -1,0 +1,10 @@
+2026-05-20 18:09:57 - trading_bot - INFO - Logging initialized. Log file: C:\Users\Admin\Desktop\trading_bot\logs\trading_bot_20260520_180957.log
+2026-05-20 18:09:58 - trading_bot.client - INFO - Binance Futures client initialized successfully (TESTNET)
+2026-05-20 18:09:59 - trading_bot.client - INFO - API connection test successful
+2026-05-20 18:10:00 - trading_bot.client - INFO - Account authenticated. Balance: 5000.00000000 USDT
+2026-05-20 18:10:00 - trading_bot.orders - INFO - OrderManager initialized
+2026-05-20 18:10:00 - trading_bot.validators - INFO - Validating order parameters...
+2026-05-20 18:10:00 - trading_bot.validators - INFO - All parameters validated successfully
+2026-05-20 18:10:00 - trading_bot.orders - INFO - Placing MARKET order...
+2026-05-20 18:10:00 - trading_bot.client - INFO - Placing MARKET order: BUY 0.001 BTCUSDT
+2026-05-20 18:10:00 - trading_bot.client - INFO - Order placed successfully. Order ID: 13167819799

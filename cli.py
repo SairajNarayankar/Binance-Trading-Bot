@@ -24,36 +24,12 @@ console = Console()
 
 @app.command()
 def order(
-    symbol: str = typer.Option(
-        ...,
-        "--symbol", "-s",
-        help="Trading pair symbol (e.g., BTCUSDT, ETHUSDT)"
-    ),
-    side: str = typer.Option(
-        ...,
-        "--side",
-        help="Order side: BUY or SELL"
-    ),
-    order_type: str = typer.Option(
-        ...,
-        "--order-type", "-t",
-        help="Order type: MARKET or LIMIT"
-    ),
-    quantity: float = typer.Option(
-        ...,
-        "--quantity", "-q",
-        help="Order quantity (e.g., 0.001 for BTC)"
-    ),
-    price: Optional[float] = typer.Option(
-        None,
-        "--price", "-p",
-        help="Limit price (required for LIMIT orders)"
-    ),
-    log_level: str = typer.Option(
-        "INFO",
-        "--log-level",
-        help="Logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL"
-    )
+    symbol: str = typer.Option(..., help="Trading pair symbol (e.g., BTCUSDT, ETHUSDT)"),
+    side: str = typer.Option(..., help="Order side: BUY or SELL"),
+    order_type: str = typer.Option(..., help="Order type: MARKET or LIMIT"),
+    quantity: float = typer.Option(..., help="Order quantity (e.g., 0.001 for BTC)"),
+    price: Optional[float] = typer.Option(None, help="Limit price (required for LIMIT orders)"),
+    log_level: str = typer.Option("INFO", help="Logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL")
 ):
     """
     Place an order on Binance Futures Testnet
@@ -111,11 +87,7 @@ def order(
 
 @app.command()
 def balance(
-    log_level: str = typer.Option(
-        "INFO",
-        "--log-level",
-        help="Logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL"
-    )
+    log_level: str = typer.Option("INFO", help="Logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL")
 ):
     """
     Check account balance on Binance Futures Testnet
@@ -147,16 +119,8 @@ def balance(
 
 @app.command()
 def info(
-    symbol: str = typer.Option(
-        ...,
-        "--symbol", "-s",
-        help="Trading pair symbol (e.g., BTCUSDT)"
-    ),
-    log_level: str = typer.Option(
-        "INFO",
-        "--log-level",
-        help="Logging level"
-    )
+    symbol: str = typer.Option(..., help="Trading pair symbol (e.g., BTCUSDT)"),
+    log_level: str = typer.Option("INFO", help="Logging level")
 ):
     """
     Get trading information for a symbol
